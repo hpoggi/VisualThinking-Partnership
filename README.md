@@ -18,8 +18,14 @@
 - [jest](https://jestjs.io/), javascript framework for testing.
 
 - [eslint](https://eslint.org/), linter for javascript, find problems and fix code style.
-
-## for running this api locally follow the next steps.
+## Diagram
+```mermaid
+graph TD;
+    data.JSON-.->Reader;
+    Reader-->StudentController;
+    StudentService<-->StudentController;
+    StudentController-->Server-->API
+```
 
 ### install project dependencies:
 
